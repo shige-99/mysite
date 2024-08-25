@@ -7,12 +7,12 @@ const Header = () => {
         <h1 className="text-black">
           <Link href="/">shige</Link>
         </h1>
-        <ul className="flex gap-3">
+        <ul className="flex gap-3 text-black">
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">わたし</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog">ブログ</Link>
           </li>
         </ul>
       </div>
