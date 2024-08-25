@@ -12,9 +12,12 @@ const AboutPage = () => {
       <h2 className="text-2xl font-bold mb-2 underline decoration-black underline-offset-4">
         スキル
       </h2>
-      <p className="text-center">
-        <img src="https://skillicons.dev/icons?i=html,css,tailwindcss,javascript,typescript,nextjs,react,svelte,python,git&perline=5" />
-      </p>
+      <img src="https://skillicons.dev/icons?i=html,css,tailwindcss,javascript,typescript,nextjs,react,svelte,python,git&perline=5" />
+      <br />
+      <h2 className="text-2xl font-bold mb-2 underline decoration-black underline-offset-4">
+        キャリア
+      </h2>
+      <p></p>
     </div>
   );
 };
