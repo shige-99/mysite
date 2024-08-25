@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-white py-5 mx-5">
-      <div className="container mx-auto flex justify-between">
-        <h1 className="text-black">
+    <header className="bg-white py-5">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-black mx-5">
           <Link href="/">shige</Link>
         </h1>
-        <ul className="flex gap-3 text-black">
+        <ul className="flex gap-3 text-black mx-5">
           <li>
             <Link href="/about">わたし</Link>
           </li>

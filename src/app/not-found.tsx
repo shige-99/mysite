@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-[100px]">
+    <div className="flex flex-col justify-center items-center py-[150px]">
       <h2 className="text-[20px] text-center mb-4 text-black">
         ページが見つかりませんでした
       </h2>

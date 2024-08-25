@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${mplus.className} flex flex-col min-h-screen text-black`}
+        className={`${mplus.className} max-w-3xl text-black mx-auto min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-grow">{children}</main>
