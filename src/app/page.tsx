@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 interface Post {
   slug: string;
@@ -50,6 +51,7 @@ export default async function Home() {
 
   return (
     <div>
+      <Header />
       <div className="py-8 px-4 mx-auto rounded-lg flex flex-col items-center bg-slate-50 container max-w-3xl">
         <h1 className="text-3xl font-bold">ハイサイ👋🏻</h1>
         <div className="mt-4">

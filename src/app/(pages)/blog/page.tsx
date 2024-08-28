@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 interface Post {
   slug: string;
@@ -36,6 +37,7 @@ export default async function Blog() {
   );
   return (
     <div className="bg-white">
+      <Header />
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl">
           <div className="space-y-16 pt-10 sm:mt-2 sm:pt-16">
