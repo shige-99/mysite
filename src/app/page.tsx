@@ -15,10 +15,10 @@ interface Post {
 }
 
 export const metadata: Metadata = {
-  title: "shige-me",
+  title: "shige",
   description: "personal site of shige",
   openGraph: {
-    title: "shige-me",
+    title: "shige",
     description: "personal site of shige",
     siteName: "personal site of shige",
     locale: "jp",
