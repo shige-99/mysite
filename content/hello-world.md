@@ -1,10 +1,9 @@
 ---
 title: Hello, World!
 date: "2024-08-26"
-description: "This is my first blog post!"
+description: "初めての投稿記事です。"
 ---
 
-## 初めての投稿
+## はじめまして
 
-Hi, there
-This is my first blog post!
+これは初めての投稿記事です。
