@@ -39,8 +39,8 @@ export default async function Blog() {
     <div className="bg-white">
       <Header />
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl">
-          <div className="space-y-16 pt-10 sm:mt-2 sm:pt-16">
+        <div className="max-w-2xl">
+          <div className="space-y-16 pt-10 sm:pt-16">
             {posts.map((post) => (
               <article
                 key={post.slug}

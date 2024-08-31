@@ -3,7 +3,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="bg-white py-5 text-[25px]">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container flex justify-between items-center">
         <h1 className="text-black mx-5">
           <Link href="/">shige</Link>
         </h1>

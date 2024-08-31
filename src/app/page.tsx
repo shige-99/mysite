@@ -63,7 +63,7 @@ export default async function Home() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-            <div className="space-y-16 pt-10 sm:mt-2 sm:pt-16">
+            <div className="space-y-16 pt-10 sm:pt-16">
               {posts.map((post) => (
                 <article
                   key={post.slug}
