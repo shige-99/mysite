@@ -5,7 +5,13 @@ const Header = () => {
     <header className="bg-white py-5 text-[25px]">
       <div className="container flex justify-between items-center">
         <h1 className="text-black mx-5">
-          <Link href="/">shige</Link>
+          <Link href="/">
+            <img
+              src="favicon.ico"
+              alt="icon"
+              className="h-10 w-10 rounded-full object-cover"
+            />
+          </Link>
         </h1>
         <ul className="flex gap-3 text-black mx-5">
           <li>
