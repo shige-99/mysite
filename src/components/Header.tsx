@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-white py-5 text-[25px]">
+    <header className="bg-white py-5 text-[25px] text-slate-950">
       <div className="container flex justify-between items-center">
-        <h1 className="text-black mx-5">
+        <h1 className="mx-5">
           <Link href="/">
             <img
               src="favicon.ico"
@@ -13,7 +13,7 @@ const Header = () => {
             />
           </Link>
         </h1>
-        <ul className="flex gap-3 text-black mx-5">
+        <ul className="flex gap-3 mx-5">
           <li>
             <Link href="/about">わたし</Link>
           </li>
