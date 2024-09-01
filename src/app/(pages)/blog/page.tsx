@@ -52,13 +52,13 @@ export default async function Blog() {
                       {post.frontmatter.date}
                     </div>
                   </div>
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-950 group-hover:text-slate-500">
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-black">
                     <Link href={`/blog/${post.slug}`}>
                       {post.frontmatter.title}
                     </Link>
                   </h3>
                   <p
-                    className="mt-3 line-clamp-3 text-sm leading-6 text-slate-950"
+                    className="mt-3 line-clamp-3 text-sm leading-6 text-black"
                     dangerouslySetInnerHTML={{
                       __html: `${post.frontmatter.description}`,
                     }}

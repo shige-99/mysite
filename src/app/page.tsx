@@ -52,7 +52,7 @@ export default async function Home() {
   return (
     <div>
       <Header />
-      <div className="py-8 px-4 mx-auto rounded-lg flex flex-col items-center text-slate-950 bg-slate-50 container max-w-3xl">
+      <div className="py-8 px-4 mx-auto rounded-lg flex flex-col items-center text-black bg-blue container max-w-3xl">
         <h1 className="text-3xl font-bold">ハイサイ👋🏻</h1>
         <div className="mt-4">
           <p className="text-lg">
@@ -75,13 +75,13 @@ export default async function Home() {
                         {post.frontmatter.date}
                       </div>
                     </div>
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-slate-950 group-hover:text-slate-500">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-black">
                       <Link href={`/blog/${post.slug}`}>
                         {post.frontmatter.title}
                       </Link>
                     </h3>
                     <p
-                      className="mt-3 line-clamp-3 text-sm leading-6 text-slate-950"
+                      className="mt-3 line-clamp-3 text-sm leading-6 text-black"
                       dangerouslySetInnerHTML={{
                         __html: `${post.frontmatter.description}`,
                       }}

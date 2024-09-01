@@ -33,8 +33,8 @@ export default async function BlogPost({ params }: Params) {
 
   return (
     <div className="bg-white px-6 py-20 lg:px-8">
-      <div className="mx-auto max-w-3xl text-base leading-7 text-slate-950">
-        <div className="mt-2 text-3xl font-bold py-8 px-4 rounded-lg bg-slate-50 tracking-tight text-slate-950 sm:text-4xl">
+      <div className="mx-auto max-w-3xl text-base leading-7 text-black">
+        <div className="mt-2 text-3xl font-bold py-8 px-4 rounded-lg bg-blue tracking-tight text-black sm:text-4xl">
           <h1>{title}</h1>
           <p className="text-sm text-slate-500 mt-4">{date}</p>
         </div>
