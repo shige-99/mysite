@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${mplus.className} max-w-3xl text-black mx-auto min-h-screen flex flex-col`}
+        className={`${mplus.className} max-w-3xl mx-auto min-h-screen flex flex-col`}
       >
         <main className="flex-grow">{children}</main>
         <Footer />
