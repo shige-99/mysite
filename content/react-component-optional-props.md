@@ -6,13 +6,32 @@ description: "Reactコンポーネントでオプショナルプロパティを�
 
 React では、子コンポーネントにプロパティを渡すとき、オプショナルプロパティ（`foo?` のように `?` をつけたやつ）は、渡さなくても OK です。じゃあ、それがどういう動きになるのか見てみよう。
 
+### 子コンポーネントの定義
+
+まず、子コンポーネントを定義してみましょう。
+
+```typescript
+const Component = (props: { foo?: boolean }) => {
+  if (props.foo) {
+    return <div>foo</div>;
+  }
+  return <div>fuga</div>;
+};
+```
+
+この `Component` は、`foo` というオプショナルプロパティを持っています。`foo` が `true` なら `<div>foo</div>` を表示し、そうでない場合は `<div>fuga</div>` を表示します。
+
+### 親コンポーネントからの使用例
+
+次に、親コンポーネントからこの子コンポーネントを使ってみます。
+
 ```typescript
 const ParentComponent = () => {
   return <Component />;
 };
 ```
 
-この例では、`Component` に `foo` プロパティが渡されていないですよね。そうすると、`props.foo` は `undefined` になります。そして、`undefined` は `if (props.foo)` の条件式で `false` として扱われるので、`<div>fuga</div>` が表示されます。
+この場合、`Component` に `foo` プロパティが渡されていないので、`props.foo` は `undefined` となり、結果的に `<div>fuga</div>` が表示されます。
 
 ```typescript
 const ParentComponent = () => {
@@ -20,7 +39,7 @@ const ParentComponent = () => {
 };
 ```
 
-次に、`foo={true}` を渡してみます。この場合、`props.foo` は `true` なので、条件が `true` となり、`<div>foo</div>` が表示されます。
+次に、`foo={true}` を渡すと、`props.foo` は `true` となり、`<div>foo</div>` が表示されます。
 
 ### オプショナルプロパティを使うと何がいいの？
 
