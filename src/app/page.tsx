@@ -10,7 +10,7 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
-    description?: string;
+    tags?: string;
   };
 }
 
@@ -75,15 +75,15 @@ export default async function Home() {
                         {post.frontmatter.date}
                       </div>
                     </div>
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-black">
+                    <h3 className="mt-3 mb-3 text-lg font-semibold leading-6 text-black">
                       <Link href={`/blog/${post.slug}`}>
                         {post.frontmatter.title}
                       </Link>
                     </h3>
                     <p
-                      className="mt-3 line-clamp-3 text-sm leading-6 text-black"
+                      className="text-sm rounded-lg inline-block py-0.5 px-1 text-slate-500 border bg-white tracking-tight"
                       dangerouslySetInnerHTML={{
-                        __html: `${post.frontmatter.description}`,
+                        __html: `${post.frontmatter.tags}`,
                       }}
                     ></p>
                   </div>
